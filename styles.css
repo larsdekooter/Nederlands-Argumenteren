@@ -54,12 +54,12 @@ header span {
 }
 
 header img {
-  height: 40px;
-  width: 40px;
+  height: 20rem;
+  width: 4rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  margin-left: 5rem;
+  transform: translateY(-50%) rotate(-90deg);
+  margin-left: 10rem;
   border-radius: 100px;
   transition: 0.4s;
 }
@@ -130,6 +130,12 @@ body::-webkit-scrollbar-thumb {
 #img,
 #img2 {
   transition: 0.4s;
+}
+
+.logo {
+  transition: 0.4s;
+  transform: rotate(-90deg);
+  width: 20%;
 }
 
 @keyframes disapear {

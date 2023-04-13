@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
           document.getElementById("img2").style.display = "flex";
         }, 100);
       }, 1000);
-    }, 1000);
+    }, 10000);
   }
 });
 
@@ -33,12 +33,12 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("header").style.padding = "0px 0px";
     document.getElementById("header").style.fontSize = "25px";
-    document.getElementById("logo").style.width = "20px";
-    document.getElementById("logo").style.height = "20px";
+    document.getElementById("logo").style.width = "1.5rem";
+    document.getElementById("logo").style.height = "7.5rem";
   } else {
     document.getElementById("header").style.padding = "20px 5px";
     document.getElementById("header").style.fontSize = "40px";
-    document.getElementById("logo").style.width = "40px";
-    document.getElementById("logo").style.height = "40px";
+    document.getElementById("logo").style.width = "4rem";
+    document.getElementById("logo").style.height = "20rem";
   }
 }
