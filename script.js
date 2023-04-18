@@ -1,4 +1,27 @@
 const item1 = document.getElementById("item");
+const ctx = document.getElementById("confidenceGraph");
+console.log(numbersDown(1, 10));
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: numbersUp(1, 10),
+    datasets: [
+      {
+        label: "Gezondheid met vermoeidheid",
+        data: numbersDown(1, 10),
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
 
 let timeout;
 

@@ -88,6 +88,10 @@ header img {
   justify-content: center;
 }
 
+.item video {
+  border-radius: 10px;
+}
+
 .connectorline {
   width: 100%;
   height: 10rem;
